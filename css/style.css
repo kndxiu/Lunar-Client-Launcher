@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+li button{
+    padding: 8px 20px;
+    box-sizing: border-box;
+    transition: 300ms;
+    font-size: 1.35rem;
+    background-color: transparent;
+    border: 3px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+
+li button:hover{
+    background-color: rgb(40, 40, 40);
+}
+
+li button:focus{
+    background-color: rgb(40, 40, 40);
+    border: 3px solid rgb(55, 55, 55);
+}
+
+.quit{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    background-color: rgb(40, 40, 40);
+    border: 3px solid rgb(55, 55, 55);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.quit:hover{
+    background-color: rgb(226, 65, 65);
+}
+
+.launch{
+    width: 100%;
+    height: 390px;
+    background-image: url("/images/background.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch_button{
+    width: 425px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 150, 75);
+    box-shadow: 0 0 40px rgb(35, 150, 75);
+    font-weight: 600;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.launch_button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgb(40, 175, 88);
+}
+
+.launch_button button{
+    border: none;
+    outline: none;
+    text-shadow:  0 1px 0 rgb(10, 10, 10);
+    background-color: transparent;
+    transition: 300ms;
+    cursor: pointer;
+    color: white;
+}
+
+.launch_button button:hover{
+    background-color: rgb(40, 175, 88);
+}
+
+.launch_button button:nth-child(1){
+    width: 100%;
+    height: 100%;
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.launch_button button span{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.launch_button button:nth-child(2){
+    height: 100%;
+    width: 50px;
+    border-left: 1px solid rgb(40, 175, 88);
+    font-size: 1rem;
+}
+
+.servers{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    padding: 0 3rem;
+    box-sizing: border-box;
+}
+
+.server{
+    width: 70px;
+    height: 70px;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.server:hover{
+    transform: scale(1.2);
+}
+
+.server:nth-child(1){
+    background-image: url("/images/servers/lunar.png");
+}
+
+.server:nth-child(2){
+    background-image: url("/images/servers/hypixel.png");
+}
+
+.server:nth-child(3){
+    background-image: url("/images/servers/jailmc.png");
+}
+
+.server:nth-child(4){
+    background-image: url("/images/servers/vipermc.png");
+}
+
+.server:nth-child(5){
+    background-image: url("/images/servers/pvplegacy.png");
+}
+
+.server:nth-child(6){
+    background-image: url("/images/servers/mineclub.png");
+}
+
+.server:nth-child(7){
+    background-image: url("/images/servers/overcastcommunity.png");
+}
+
+.server:nth-child(8){
+    background-image: url("/images/servers/opblocks.png");
+}
+
+.server:nth-child(9){
+    background-image: url("/images/servers/mcc.png");
+}
+
+.posts{
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post_name{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    text-shadow: 0 1px 0 rgb(10, 10, 10);
+    color: white;
+}
+
+.posts_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem 1rem 1rem;
+    box-sizing: border-box;
+}
+
+.post{
+    width: 33%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post_img{
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/post.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.post:hover .post_img{
+    transform: scale(1.05);
+}
+
+.post_description{
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.post_footer{
+    width: 100%;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.post_author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.post_author img{
+    width: 16px;
+    height: 16px;
+}
+
+.post_footer button{
+    padding: 0.4rem 0.25rem;
+    background-color: rgb(51, 125, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.15;
+}
+
+.social_media{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+.social_media a{
+    transition: 300ms;
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.social_media a:hover{
+    color: rgb(85, 85, 85);
+}
+
+.indicator{
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(50, 50, 50, 0.7);
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 0;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    gap: 0.5rem;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 150ms, 150ms;
+    top: 50%;
+    color: white;
+}
+
+.indicator_icon{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator_server{
+    font-size: 0.7rem;
+}
